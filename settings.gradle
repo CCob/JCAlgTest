@@ -1,3 +1,4 @@
-rootProject.name = 'jcard'
+rootProject.name = 'JCAlgTest'
 include 'applet'
+include 'client'
 

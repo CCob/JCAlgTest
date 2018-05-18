@@ -1,6 +1,6 @@
 package tests;
 
-import applet.MainApplet;
+import algtest.JCAlgTestApplet;
 import cardTools.CardManager;
 import cardTools.RunConfig;
 import cardTools.Util;
@@ -43,7 +43,7 @@ public class SimpleAPDU {
         //runCfg.setTestCardType(RunConfig.CARD_TYPE.PHYSICAL);
 
         // Running in the simulator
-        runCfg.setAppletToSimulate(MainApplet.class)
+        runCfg.setAppletToSimulate(JCAlgTestApplet.class)
                 .setTestCardType(RunConfig.CARD_TYPE.JCARDSIMLOCAL)
                 .setbReuploadApplet(true)
                 .setInstallData(new byte[8]);

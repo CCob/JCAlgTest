@@ -1,0 +1,20 @@
+
+
+// Repositories for your project
+repositories {
+    mavenCentral()
+    // mavenLocal() // for local maven repository if needed
+
+    // Repository with JCardSim, Globalplatform, etc, ...
+    maven {
+        url  "https://dl.bintray.com/ph4r05/jcard"
+    }
+}
+
+apply plugin: 'java'
+sourceCompatibility = 1.7
+
+dependencies{
+    compile project(':applet')
+    compile 'com.licel:jcardsim:3.0.5'
+}

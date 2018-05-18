@@ -1,4 +1,4 @@
-group 'test-applet'
+group 'applet'
 version '1.0-SNAPSHOT'
 
 // Buildscript configuration for the javacard-gradle plugin.
@@ -74,15 +74,15 @@ javacard {
 
         //noinspection GroovyAssignabilityCheck
         cap {
-            packageName 'applet'
+            packageName 'algtest'
             version '0.1'
-            aid '01:02:03:04:05:06:07:08:09'
+            aid '4a:43:41:6c:67:54:65:73:74'
             output 'applet.cap'
 
             //noinspection GroovyAssignabilityCheck
             applet {
-                className 'applet.MainApplet'
-                aid '01:02:03:04:05:06:07:08:09:01:02'
+                className 'algtest.JCAlgTestApplet'
+                aid '4a:43:41:6c:67:54:65:73:74:31'
             }
 
             //noinspection GroovyAssignabilityCheck
